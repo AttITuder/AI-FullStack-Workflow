@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 项目文档
+    url: https://github.com/dpc/AI-FullStack-Workflow/tree/main/docs
+    about: 请先查阅文档，很多问题已有解答

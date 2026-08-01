@@ -1,0 +1,55 @@
+site_name: AI FullStack Workflow
+
+site_description: AI驱动的全栈开发工作流知识库
+
+site_author: Roc
+
+repo_name: AI-FullStack-Workflow
+
+theme:
+  name: material
+
+  language: zh
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - search.highlight
+    - content.code.copy
+
+
+markdown_extensions:
+
+  - toc:
+      permalink: true
+
+  - admonition
+
+  - pymdownx.details
+
+  - pymdownx.superfences
+
+
+nav:
+
+  - 首页:
+      - README: index.md
+
+  - AI基础:
+      - AI开发时代: 01-ai-basic/ai-era.md
+
+  - 模型:
+      - 模型选择: 02-models/model-selection.md
+
+  - OpenCode:
+      - 入门: 03-opencode/index.md
+
+  - Codex:
+      - 入门: 04-codex/index.md
+
+  - Flutter:
+      - AI Flutter开发: 12-flutter/index.md
+
+  - Android:
+      - AI Android开发: 13-android/index.md

@@ -1,0 +1,55 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  check-structure:
+    name: 检查目录结构
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 检查所有目录都包含 README.md
+        run: |
+          failed=0
+          while IFS= read -r dir; do
+            if [ ! -f "$dir/README.md" ]; then
+              echo "缺少 README.md: $dir"
+              failed=1
+            fi
+          done < <(find . -type d -not -path './.git*' -not -path '.' | sort)
+          if [ $failed -ne 0 ]; then
+            echo "存在缺少 README.md 的目录，请为每个目录添加 README.md"
+            exit 1
+          fi
+          echo "所有目录均包含 README.md"
+
+      - name: 检查根目录必需文件
+        run: |
+          for f in README.md CHANGELOG.md CONTRIBUTING.md LICENSE; do
+            if [ ! -f "$f" ]; then
+              echo "缺少必需文件: $f"
+              exit 1
+            fi
+          done
+          echo "根目录必需文件完整"
+
+  check-markdown:
+    name: Markdown 规范检查
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DavidAnson/markdownlint-cli2-action@v19
+        with:
+          globs: "**/*.md"
+          config: |
+            {
+              "MD013": false,
+              "MD024": { "siblings_only": true },
+              "MD033": false,
+              "MD041": false
+            }
