@@ -20,6 +20,12 @@
   - GitHub 社区标准：ISSUE_TEMPLATE / PULL_REQUEST_TEMPLATE / CI workflow
   - 基础文件：CHANGELOG / CONTRIBUTING / LICENSE (MIT) / .gitignore / .editorconfig
 
+## [0.1.1]
+
+- 完善项目定位
+- 增加项目架构说明
+- 增加模板体系
+
 ## [0.0.1] - 2026-07-31
 
 ### Added

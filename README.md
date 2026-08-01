@@ -1,21 +1,17 @@
 # AI FullStack Workflow
 
-> 一个持续维护的 AI 开发知识库。
+AI FullStack Workflow 是一个长期维护的 AI 全栈开发工作流知识库。
 
-## 内容
+不仅包含：
 
-- OpenCode
-- Codex
-- Claude Code
-- CodeBuddy
-- Pi Agent
-- MCP
-- Flutter
-- Android
-- Vue
-- 企业开发
+- Workflow
 - Prompt
-- Agent
 - Rules
+- Agent
+- MCP
+- Examples
+- Enterprise Best Practices
 
-持续更新中……
+目标：
+
+帮助开发者建立完整的 AI 软件开发工作流。
