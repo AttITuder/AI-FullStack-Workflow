@@ -12,14 +12,14 @@
 ## 目录
 
 - `01-ai-model-overview.md` — AI 模型概览（LLM 基础、能力维度、开源与闭源）
-- `02-openai.md` — OpenAI（待补充）
-- `03-anthropic.md` — Anthropic（待补充）
-- `04-google.md` — Google Gemini（待补充）
+- `02-openai.md` — OpenAI
+- `03-anthropic.md` — Anthropic
+- `04-google.md` — Google Gemini
 - `05-deepseek.md` — DeepSeek 详解
-- `06-qwen.md` — Qwen（待补充）
-- `07-kimi.md` — Kimi（待补充）
-- `08-zhipu.md` — GLM 智谱（待补充）
-- `09-open-source.md` — 开源模型（待补充）
+- `06-qwen.md` — Qwen
+- `07-kimi.md` — Kimi
+- `08-zhipu.md` — GLM 智谱
+- `09-open-source.md` — 开源模型
 - `10-model-selection.md` — 企业模型选型
 - `11-vision-and-toolcall.md` — Vision 与 Tool Calling
 
