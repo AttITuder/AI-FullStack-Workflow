@@ -1,14 +1,15 @@
 # OpenCode
 
-本章节介绍 OpenCode 在 AI FullStack Workflow 中的定位、安装、Provider 配置、工作流设计以及企业最佳实践。
+OpenCode 是 AI FullStack Workflow 中的重要 AI Coding Agent。
 
-## 学习目标
+本章节介绍：
 
-- 理解 OpenCode 的设计理念
-- 完成开发环境搭建
-- 掌握 Provider 配置
-- 建立 OpenCode 工作流
-- 应用于 Flutter、Android 与企业研发
+- OpenCode 原理
+- 安装配置
+- Provider
+- 开发 Workflow
+- 企业最佳实践
+- 常见问题
 
 ## 目录
 
@@ -22,6 +23,8 @@
 ## 阅读建议
 
 1. 先读 `01-overview.md` 建立整体认知。
-2. 按需完成安装与 Provider 配置。
-3. 重点实践 `04-workflow.md` 建立标准流程。
-4. 参考 `05-best-practice.md` 沉淀团队最佳实践。
+2. 按 `02-install.md` 完成安装。
+3. 参考 `03-provider.md` 配置模型。
+4. 按 `04-workflow.md` 建立开发流程。
+5. 沉淀团队实践参照 `05-best-practice.md`。
+6. 遇到问题查 `06-faq.md`。
